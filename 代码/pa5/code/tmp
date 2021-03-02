@@ -1,0 +1,23 @@
+    ERROR: Command errored out with exit status 1:
+     command: 'C:\Users\DELL\anaconda3\python.exe' -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'C:\\Users\\DELL\\AppData\\Local\\Temp\\pip-install-74j9d8qs\\pyaudio\\setup.py'"'"'; __file__='"'"'C:\\Users\\DELL\\AppData\\Local\\Temp\\pip-install-74j9d8qs\\pyaudio\\setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record 'C:\Users\DELL\AppData\Local\Temp\pip-record-ou7jpr65\install-record.txt' --single-version-externally-managed --compile --install-headers 'C:\Users\DELL\anaconda3\Include\pyaudio'
+         cwd: C:\Users\DELL\AppData\Local\Temp\pip-install-74j9d8qs\pyaudio\
+    Complete output (17 lines):
+    running install
+    running build
+    running build_py
+    creating build
+    creating build\lib.win-amd64-3.7
+    copying src\pyaudio.py -> build\lib.win-amd64-3.7
+    running build_ext
+    building '_portaudio' extension
+    creating build\temp.win-amd64-3.7
+    creating build\temp.win-amd64-3.7\Release
+    creating build\temp.win-amd64-3.7\Release\src
+    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\bin\HostX86\x64\cl.exe /c /nologo /Ox /W3 /GL /DNDEBUG /MD -DMS_WIN64=1 -IC:\Users\DELL\anaconda3\include -IC:\Users\DELL\anaconda3\include "-IC:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\ATLMFC\include" "-IC:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include" "-IC:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt" "-IC:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared" "-IC:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um" "-IC:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt" "-IC:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt" /Tcsrc/_portaudiomodule.c /Fobuild\temp.win-amd64-3.7\Release\src/_portaudiomodule.obj
+    _portaudiomodule.c
+    C:\Users\DELL\anaconda3\include\pyconfig.h(117): warning C4005: “MS_WIN64”: 宏重定义
+    src/_portaudiomodule.c: note: 参见“MS_WIN64”的前一个定义
+    src/_portaudiomodule.c(29): fatal error C1083: 无法打开包括文件: “portaudio.h”: No such file or directory
+    error: command 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.27.29110\\bin\\HostX86\\x64\\cl.exe' failed with exit status 2
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: 'C:\Users\DELL\anaconda3\python.exe' -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'C:\\Users\\DELL\\AppData\\Local\\Temp\\pip-install-74j9d8qs\\pyaudio\\setup.py'"'"'; __file__='"'"'C:\\Users\\DELL\\AppData\\Local\\Temp\\pip-install-74j9d8qs\\pyaudio\\setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record 'C:\Users\DELL\AppData\Local\Temp\pip-record-ou7jpr65\install-record.txt' --single-version-externally-managed --compile --install-headers 'C:\Users\DELL\anaconda3\Include\pyaudio' Check the logs for full command output.

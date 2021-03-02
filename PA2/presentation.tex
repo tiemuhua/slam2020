@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{xeCJK}
+\usepackage{amsmath}
+\begin{document}
+\section{向量几何法}
+对于任意的旋转轴$\omega$($\omega$是一个三维单位向量)，和任意的向量$v$，
+$v$总可以分解为$v_{\perp}$和$v_{//}$，其中
+$v_{//}=(v \cdot \omega) v$，$v_{\perp}=v-v_{//}$。
+在旋转过程中，平行于旋转轴的$v_{//}$不会发生变换，只有垂直于旋转轴的$v_{\perp}$会发生变换。
+旋转后为：
+$$v_{\perp}^{'}=cos(\theta)*v_{\perp}+sin(\theta)*v\times \omega$$
+故
+\begin{equation}
+    \begin{split}
+        v^{'}=&v_{//}+v_{\perp}^{'}\\
+        =&(v \cdot \omega) v+cos(\theta)v_{\perp}+sin(\theta)v\times \omega\\
+        =&(1-cos(\theta))(v\cdot\omega)\omega+cos(\theta)v+sin(\theta)(\omega \times v)\\
+        % =&(1-cos(\theta))\omega \omega^{T} v+cos(\theta) v+sin(\theta)\omega^{^}v\\
+        =&(1-cos\theta)\omega \omega^T v + cos\theta v + sin\theta \omega^{\^} v
+        % =&((1-cos(\theta))\omega \omega^{T}+cos(\theta)+sin(\theta)\omega^{^})v\\
+    \end{split}
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
+\section{李代数法}
+\end{document}
